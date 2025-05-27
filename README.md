@@ -25,7 +25,7 @@ The text color inside the boxes is black.
 <ul>
 <li>Centered game layout</li>
 <li>Animated 9 boxes</li>
-<<li>li>Turn indicator with animation</li>
+<li>li>Turn indicator with animation</li>
 <li>Player scores display</li>
 <li>Message box for tie or winner</li>
 <li>Reset button with animation</li>
