@@ -9,7 +9,6 @@ scoreOfX = parseInt(scoreOfX);
 let scoreOfO = document.getElementById("scoreO").innerText;
 scoreOfO = parseInt(scoreOfO);
 let dispalyWhoseTurn = document.getElementById("tellWhoseTurn");
-
 // Function to check winner
 function decision() {
     const winPatterns = [
@@ -22,9 +21,7 @@ function decision() {
         [0, 4, 8],
         [2, 4, 6],
     ];
-
     let someoneWon = false;
-
     winPatterns.forEach(pattern => {
         let [a, b, c] = pattern;
         if (
@@ -46,23 +43,19 @@ function decision() {
             }
         }
     });
-
     //now check match is drawn or not
     if (!someoneWon && Array.from(boxesArray).every(box => box.innerText !== "")) {
         messageBox.innerText = "MATCH DRAW!";
     }
 }
-
 // Function to display winner
 function displayWinner(winner) {
     messageBox.innerText = `CONGRATULATIONS! ${winner} is the winner!`;
 }
-
 // Add click event listener to all boxes
 boxesArray.forEach(box => {
     box.addEventListener("click", writingFunction);
 });
-
 // Reset button
 document.getElementById("resetButton").addEventListener("click", () => {
     boxesArray.forEach(box => (box.innerText = ""));

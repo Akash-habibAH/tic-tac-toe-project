@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div id="tellWhoseTurn" aria-live="polite">X's Turn</div>
+            <div class="container">
+                <div class="firstRow">
+                    <div class="boxes" id="box1" role="button" tabindex="0" aria-label="box1"></div>
+                    <div class="boxes" id="box2" role="button" tabindex="0" aria-label="box2"></div>
+                    <div class="boxes" id="box3" role="button" tabindex="0" aria-label="box3"></div>
+                </div>
+                <div class="secondRow">
+                    <div class="boxes" id="box4" role="button" tabindex="0" aria-label="box4"></div>
+                    <div class="boxes" id="box5" role="button" tabindex="0" aria-label="box5"></div>
+                    <div class="boxes" id="box6" role="button" tabindex="0" aria-label="box6"></div>
+                </div>
+                <div class="thirdRow">
+                    <div class="boxes" id="box7" role="button" tabindex="0" aria-label="box7"></div>
+                    <div class="boxes" id="box8" role="button" tabindex="0" aria-label="box8"></div>
+                    <div class="boxes" id="box9" role="button" tabindex="0" aria-label="box9"></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="description">
+                <div id="Xscore"> X's Score
+                    <p id="scoreX" aria-live="polite">0</p>
+                </div>
+                <div id="Oscore">O's Score
+                    <p id="scoreO" aria-live="polite">0</p>
+                </div>
+                <p id="messageBox" role="alert" aria-live="polite">DECISION PENDING!</p>
+                <button id="resetButton">Reset Game</button>
+            </div>
+        </section>
+    </main>
+    <script src="../dist/script.js"></script>
+</body>
+</html>
