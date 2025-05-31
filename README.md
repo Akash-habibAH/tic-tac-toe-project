@@ -30,3 +30,5 @@ The text color inside the boxes is black.
 <li>Message box for tie or winner</li>
 <li>Reset button with animation</li>
 </ul>
+<b>live link</b>
+https://tic-tacbattle.netlify.app/
