@@ -1,11 +1,5 @@
 # Node modules
 node_modules/
-
-# Build/Minified output
-dist/
-build/
-tic-tac-toe-project/
-
 # OS junk
 .DS_Store
 Thumbs.db
